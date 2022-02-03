@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { Form, Modal, Button } from "react-bootstrap";
 import { useBudgets, UNCATEGORIZED_BUDGET_ID } from "../contexts/BudgetContext";
 
