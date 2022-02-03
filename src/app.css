@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all ease-in-out 0.2s;
+}
+
+.App {
+    width: 100vw;
+    max-width: 70rem;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Header {
+    width: 100vw;
+    max-width: 55rem;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.Header_divs{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.BudgetCard{
+    width: 100vw;
+    max-width: 55rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-gap: 1rem;
+    justify-items: center;
+    place-items: center;
+}
+
+.BudgetCard_box{
+    width: 100vw;
+    border: 1px solid rgb(212, 211, 211);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+@media (min-width: 400px){
+    .BudgetCard_box{
+        width: 22rem;
+    }
+}
+
+.Budgetcard_names{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.BudgetCard_bar{
+    margin-bottom: 1rem;
+}
+
+.BudgetCard_buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.a{
+    z-index: 999;
+    position: fixed;
+    top: 2rem;
+    right: 0;
+}
